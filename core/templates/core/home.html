@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<div>
+  <div 
+    class="bg-local h-screen flex flex-col items-center justify-center text-white text-center" 
+    style="background-image: url('{% static "core/img/principal.jpg" %}'); background-size: cover; background-position: center;"
+  >
+    <h1 class="text-4xl font-bold">Web Playground</h1>
+    <p class="lead text-xl mt-4">CBV, autenticación, registros, perfiles y más </p>
+  </div>
+</div>
+{% endblock %}
+
+
+
+{% comment %} {% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+
+<div>
+  
+  <div class="bg-local"  style="background-image: url=('{% static "core/img/principal.jpg" %}')"  > 
+
+    <h1>Web Playground</h1>
+
+    <p class="lead">CBV, autenticación, registros, perfiles y más</p>
+
+
+  </div>
+
+
+</div>
+{% endblock %} {% endcomment %}

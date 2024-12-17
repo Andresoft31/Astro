@@ -1,0 +1,51 @@
+{% extends "core/base.html" %}
+{% block title %} Crear Entrada {% endblock %}
+
+{% block content %}
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<main class="bg-gray-700 py-8">
+    <div class="max-w-2xl mx-auto bg-gray-100 p-6 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold mb-6">Crear Nueva Entrada</h1>
+        <form method="POST" action="{% url 'crear_entrada' %}">
+            {% csrf_token %}
+            <div class="mb-4">
+                <label for="title" class="block text-gray-700 font-medium">Título</label>
+                <input
+                    id="title"
+                    name="title"
+                    type="text"
+                    placeholder="Ingrese el título"
+                    class="border-2 border-gray-300 rounded-md w-full p-2"
+                    required
+                >
+            </div>
+            <div class="mb-4">
+                <label for="subtitle" class="block text-gray-700 font-medium">Subtítulo</label>
+                <input
+                    id="subtitle"
+                    name="subtitle"
+                    type="text"
+                    placeholder="Ingrese el subtítulo"
+                    class="border-2 border-gray-300 rounded-md w-full p-2"
+                >
+            </div>
+            <div class="mb-4">
+                <label for="descripcion" class="block text-gray-700 font-medium">Descripción</label>
+                <textarea
+                    id="descripcion"
+                    name="descripcion"
+                    placeholder="Ingrese la descripción"
+                    class="border-2 border-gray-300 rounded-md w-full p-2"
+                    rows="5"
+                ></textarea>
+            </div>
+            <button
+                type="submit"
+                class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+            >
+                Crear Entrada
+            </button>
+        </form>
+    </div>
+</main>
+{% endblock %}

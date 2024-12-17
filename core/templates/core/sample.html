@@ -1,0 +1,128 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Página{% endblock %}
+{% block content %}
+
+<!-- Importar Tailwind CSS -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<main class="py-10 bg-gray-100">
+  <!-- Contenedor principal -->
+  <div class="container mx-auto px-4">
+    <!-- Sección con imagen de fondo -->
+    <div class="relative bg-cover bg-center rounded-lg shadow-xl overflow-hidden"
+         style="background-image: url('{% static "core/img/Prueba.jpg" %}'); min-height: 500px;">
+
+      <!-- Capa oscura semi-transparente -->
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-center px-4">
+        <!-- Contenido -->
+        <div class="text-white">
+          <!-- Título con degradado -->
+          <h1 class="text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-500">
+            Página de Prueba
+          </h1>
+          <!-- Texto descriptivo -->
+          <p class="text-lg max-w-2xl mx-auto mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit nibh vel faucibus auctor. 
+            Cras ex nisl, fringilla ut rhoncus a, vestibulum ac turpis.
+          </p>
+          <!-- Botón de acción -->
+          <a href="#" class="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-green-400 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition-transform duration-300">
+            Ver Más
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de texto adicional -->
+    <div class="mt-12 text-gray-700 text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">¿Qué es esta página?</h2>
+      <p class="text-lg leading-relaxed">
+        Esta página es un ejemplo práctico donde aplicamos Tailwind CSS y Django para crear una interfaz moderna y atractiva.
+        Aprenderás cómo combinar imágenes de fondo, gradientes y animaciones simples para mejorar la experiencia del usuario.
+      </p>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
+
+{% comment %} {% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Página{% endblock %}
+{% block content %}
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<main role="main" class="py-8 bg-gray-100">
+  <div class="container mx-auto">
+
+    <div class="row justify-content-center">
+      <!-- Sección con imagen de fondo -->
+      <div class="col-md-3 flex flex-col justify-center items-center text-center p-6 rounded-lg shadow-lg"
+           style="background-image: url('{% static "core/img/Prueba.jpg" %}'); background-size: cover; background-position: center;">
+
+        <!-- Título con degradado -->
+        <div class="text-5xl font-extrabold mb-4">
+          <h3 class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+            Página de prueba
+          </h3>
+        </div>
+
+        <!-- Texto -->
+        <div class="text-lg text-white bg-black bg-opacity-50 p-4 rounded">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit nibh vel faucibus auctor.
+            Phasellus non arcu dictum, porttitor orci sed, maximus ligula. Duis mollis pulvinar tempor.
+            Cras ex nisl, fringilla ut rhoncus a, vestibulum ac turpis.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</main>
+{% endblock %} {% endcomment %}
+
+
+
+{% comment %} {% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Página{% endblock %}
+{% block content %}
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+<main role="main">
+  <div class="container">
+
+    <div class="row justify-content-md-center">
+
+      <div class="col-md-3 bg-contain bg-center"
+
+      style= " background-image: url=('{% static "core/img/Prueba.jpg" %}')" bg-contain  >
+
+      <div class="text-5xl font-extrabold  ">
+        <h3 class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500" >Página de prueba</h3>
+
+      </div>
+
+      <div class="text-5xl ">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit nibh vel faucibus auctor. 
+          Phasellus non arcu dictum, porttitor orci sed, maximus ligula. Duis mollis pulvinar tempor. 
+          Cras ex nisl, fringilla ut rhoncus a, vestibulum ac turpis.</p>
+      </div>
+        
+      </div>
+     
+    </div>
+  </div>
+
+
+</main>
+{% endblock %}
+ {% endcomment %}
