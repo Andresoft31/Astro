@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django_cloudflare.CloudflareMiddleware',
 ]
 
-ROOT_URLCONF = 'AstroWeb.urls'
+ROOT_URLCONF = 'astroweb.urls'
 
 TEMPLATES = [
     {
