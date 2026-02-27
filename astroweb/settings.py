@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'AstroWeb.wsgi.application'
+WSGI_APPLICATION = 'astroweb.wsgi.application'
 
 
 # Database
