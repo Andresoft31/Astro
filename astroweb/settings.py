@@ -56,7 +56,7 @@ MIDDLEWARE = [
     
 ]
 
-ROOT_URLCONF = 'AstroWeb.urls'
+ROOT_URLCONF = 'astroweb.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'AstroWeb.wsgi.application'
+WSGI_APPLICATION = 'astroweb.wsgi.application'
 
 
 # Database
