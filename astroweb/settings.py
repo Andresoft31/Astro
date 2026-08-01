@@ -28,6 +28,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['astro-otbl.onrender.com']
 
+# ALLOWED_HOSTS = ['127.0.0.1']
+
 
 # Application definition
 
